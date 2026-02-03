@@ -213,7 +213,10 @@ export default function BSMDashboardPage() {
       setStatistics(data);
     } catch (error: any) {
       setErrorMessage(
-        t("Impossible de charger les statistiques", "Unable to load statistics"),
+        t(
+          "Impossible de charger les statistiques",
+          "Unable to load statistics",
+        ),
       );
       console.error("Fetch Statistics Error:", error);
     } finally {
@@ -400,7 +403,9 @@ export default function BSMDashboardPage() {
           {isLoadingStats && (
             <div className="loading-state">
               <RefreshCw className="spin" />
-              <p>{t("Chargement des statistiques...", "Loading statistics...")}</p>
+              <p>
+                {t("Chargement des statistiques...", "Loading statistics...")}
+              </p>
             </div>
           )}
 
@@ -644,7 +649,12 @@ export default function BSMDashboardPage() {
                     0 && (
                     <div className="chart-card-small">
                       <div className="chart-header">
-                        <h3>{t("Top 10 agences par revenu", "Top 10 agencies by revenue")}</h3>
+                        <h3>
+                          {t(
+                            "Top 10 agences par revenu",
+                            "Top 10 agencies by revenue",
+                          )}
+                        </h3>
                       </div>
                       <div className="chart-container-small">
                         <ResponsiveContainer width="100%" height="100%">
@@ -742,7 +752,9 @@ export default function BSMDashboardPage() {
                   Object.keys(statistics.reservations_per_month).length > 0 && (
                     <div className="chart-card-small">
                       <div className="chart-header">
-                        <h3>{t("Réservations par mois", "Reservations by month")}</h3>
+                        <h3>
+                          {t("Réservations par mois", "Reservations by month")}
+                        </h3>
                       </div>
                       <div className="chart-container-small">
                         <ResponsiveContainer width="100%" height="100%">
@@ -955,6 +967,8 @@ export default function BSMDashboardPage() {
               {/* Agences Card */}
               <div
                 style={{
+                  background: "white",
+                  border: "1px solid var(--gray-200)",
                   borderRadius: "var(--radius-lg)",
                   padding: "var(--spacing-xl)",
                 }}
@@ -1023,7 +1037,6 @@ export default function BSMDashboardPage() {
                       }}
                     />
                     <input
-                      className="bsm-agency-search-input"
                       type="text"
                       placeholder={t("Rechercher", "Search")}
                       value={agencesSearch}
@@ -1104,7 +1117,6 @@ export default function BSMDashboardPage() {
                         .map((agence) => (
                           <div
                             key={agence.agency_id}
-                            className="bsm-agency-item"
                             style={{
                               border: "1px solid var(--gray-200)",
                               borderRadius: "var(--radius-md)",
@@ -1177,6 +1189,8 @@ export default function BSMDashboardPage() {
               {/* Organizations Card */}
               <div
                 style={{
+                  background: "white",
+                  border: "1px solid var(--gray-200)",
                   borderRadius: "var(--radius-lg)",
                   padding: "var(--spacing-xl)",
                 }}
@@ -1242,7 +1256,6 @@ export default function BSMDashboardPage() {
                       }}
                     />
                     <input
-                      className="bsm-org-search-input"
                       type="text"
                       placeholder={t("Rechercher", "Search")}
                       value={orgsSearch}
@@ -1297,7 +1310,10 @@ export default function BSMDashboardPage() {
                       }}
                     />
                     <p style={{ color: "var(--gray-500)" }}>
-                      {t("Aucune organisation trouvée", "No organization found")}
+                      {t(
+                        "Aucune organisation trouvée",
+                        "No organization found",
+                      )}
                     </p>
                   </div>
                 ) : (
@@ -1327,7 +1343,6 @@ export default function BSMDashboardPage() {
                         .map((org) => (
                           <div
                             key={org.organization_id}
-                            className="bsm-organization-item"
                             style={{
                               border: "1px solid var(--gray-200)",
                               borderRadius: "var(--radius-md)",
