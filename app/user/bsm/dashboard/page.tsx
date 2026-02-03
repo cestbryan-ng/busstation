@@ -954,7 +954,6 @@ export default function BSMDashboardPage() {
             >
               {/* Agences Card */}
               <div
-                className="bsm-agencies-widget"
                 style={{
                   borderRadius: "var(--radius-lg)",
                   padding: "var(--spacing-xl)",
@@ -1177,7 +1176,6 @@ export default function BSMDashboardPage() {
 
               {/* Organizations Card */}
               <div
-                className="bsm-organizations-widget"
                 style={{
                   borderRadius: "var(--radius-lg)",
                   padding: "var(--spacing-xl)",
