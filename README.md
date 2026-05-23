@@ -1,6 +1,5 @@
 # Bus Station
 
-
 Ce projet est une plateforme de gestion complète destinée aux gares routières et aux agences de transport.
 Il vise à moderniser, automatiser et centraliser toutes les opérations liées au fonctionnement d’une gare, depuis
 l’administration des agences jusqu’à la gestion du trafic des véhicules.
@@ -16,8 +15,8 @@ stationnement et ainsi que la gestion des reservations de voyage pour les client
 Pour compiler le projet suivez ces instructions
 
 ```bash
-git clone https://github.com/jacks524/Projet-bus-station-.git
-cd Projet-bus-station-
+git clone https://github.com/cestbryan-ng/busstation.git
+cd busstation
 
 # Installer les dépendances
 npm install
