@@ -1,6 +1,6 @@
 # Bus Station
 
-Ce projet est une plateforme de gestion complète destinée aux gares routières et aux agences de transport.
+Ce projet est une plateforme multi-tenante de gestion complète destinée aux gares routières et aux agences de transport.
 Il vise à moderniser, automatiser et centraliser toutes les opérations liées au fonctionnement d’une gare, depuis
 l’administration des agences jusqu’à la gestion du trafic des véhicules.
 Il s’intègre dans un écosystème plus large comprenant une application mobile et d'autres services backend.
